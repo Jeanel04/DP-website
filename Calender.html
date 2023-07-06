@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Calendar table styles */
+        table {
+          width: 100%;
+          border-collapse: collapse;
+        }
+        
+        th {
+          background-color: #f2f2f2;
+          text-align: center;
+          padding: 10px;
+        }
+        
+        td {
+          text-align: center;
+          padding: 10px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #f9f9f9;
+        }
+        
+        /* Calendar day styles */
+        td:not(:empty) {
+          position: relative;
+          cursor: pointer;
+        }
+        
+        .event-marker {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 8px;
+          height: 8px;
+          background-color: red;
+          border-radius: 50%;
+          transform: translate(50%, -50%);
+        }
+      </style>
+</head>
+<body>
+    <h1>Event Calendar</h1>
+<div id="event-calendar">
+  <table>
+    <tr>
+      <th>Sun</th>
+      <th>Mon</th>
+      <th>Tue</th>
+      <th>Wed</th>
+      <th>Thu</th>
+      <th>Fri</th>
+      <th>Sat</th>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <!-- ... Rest of the calendar table ... -->
+  </table>
+</div>
+
+</body>
+</html>

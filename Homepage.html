@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="Tiger.css">
+	<title>Home Page </title>
+	
+	<script>
+	function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+
+	</script>
+</head>
+<body>
+	<header>
+
+		<img src="School Logo.png" alt="Logo" width="100" height="100"  class="logo">
+		<nav>
+            <ul>
+				<li><a href="Homepage.html">Home</a></li>
+				<li><a href="About Page.html">About</a></li>
+				<li> <a href="Socialpage.html">Social</a></li>
+				<li> <a href="Eventpage.html">Event</a></li>
+				<li><a href="Gallerypage.html">Gallery</a></li>
+			  </ul>
+         
+        </nav>
+	</header>
+	
+	<section>
+		<div class="homecontainer">
+			<div class="Slogan">
+				<img src="Home image .jpg" alt="Your Image">
+			</div>
+			<div class="text">
+				<h1> Welcome to Hoër Tegniese skool/Technical High School Daniel Pienaar</h1>
+				<p>Daniel Pienaar Technical High School strives to provide quality technical education, equipping students with the necessary skills and knowledge to pursue careers in technical and engineering fields. It fosters a supportive and engaging learning environment, preparing students for future academic endeavors and the challenges of the modern workforce.<span id="dots">...</span><span id="more">It fosters a supportive and engaging learning environment, preparing students for future academic endeavors and the challenges of the modern workforce <a href=https://www.facebook.com/www.danielpienaar.co.za/photos?locale=af_ZA>Click for info </a></span></p>
+					<button onclick="myFunction()" id="myBtn">Read more</button>
+			</div>
+		</div>
+		
+	</section>
+
+	<footer>
+
+	</footer>
+
+</body>
+</html>
+
+		
